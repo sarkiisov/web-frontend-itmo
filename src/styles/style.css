@@ -1,0 +1,29 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+:root {
+  --black: #000000;
+  --grey: #4B4B4B;
+
+  --transition-duration: 0.2s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font-family: 'IBMPlexMono';
+}
+
+.wrapper {
+  max-width: 1270px;
+  min-height: 100vh;
+  padding: 0px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+footer {
+  margin-top: auto;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-time {
+  text-align: center;
+}
+
+.load-time__value {
+  font-weight: 500;
+}
