@@ -40,10 +40,6 @@
   color: var(--grey);
 }
 
-.links__group {
-  color: currentColor;
-}
-
 @media screen and (max-width: 600px) {
   .nav, .links {
     display: flex;

@@ -27,3 +27,69 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.svg-group {
+  color: currentColor;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.person-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border: 1px solid var(--black)
+}
+
+.person-info__header {
+  display: flex;
+  column-gap: 20px;
+  font-style: italic;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.person-info__fetch {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  color: var(--black);
+  transition: color var(--transition-duration);
+}
+
+.person-info__fetch:hover {
+  color: var(--grey);
+}
+
+.person-info__fetch:hover {
+  cursor: pointer;
+}
+
+.person-info__fetch_active > svg {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.person-info__details {
+  margin-top: 10px;
+}
+
+.person-info__group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person-info__value {
+  margin: 10px 0px;
+  display: block;
+}
