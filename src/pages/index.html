@@ -31,7 +31,6 @@
         </div>
       </div>
     </header>
-
     <main>
       <div class="details">
         <div class="person-info">
@@ -99,8 +98,73 @@
           </div>
         </div>
       </div>
-    </main>
+      <form action="">
+        <table class="table">
+            <thead class="table__thead">
+              <th class="table__th" scope="col">Продукт</th>
+              <th class="table__th" scope="col">Цена</th>
+              <th class="table__th" scope="col">Количество</th>
+              <th class="table__th" scope="col">Общая стоимость</th>
+            </thead>
+            <tbody class="table__body">
+            <tr class="table__tr">
+              <td class="table__td" data-label="Продукт">
+                <div class="table__cell table__product">
+                  <div class="table__product__image">Image</div>
+                  <p class="table__product__name">Название товара</p>
+                </div>
+                
+              </td>
+              <td class="table__td" data-label="Цена">
+                <div class="table__cell table__price">
+                    <p>₽ 2.000</p>
+                </div>
+              </td>
+              <td class="table__td" data-label="Количество">
+                <div class="table__cell table__amount">
+                  <p>x 1</p>
+                </div>
+              </td>
+              <td class="table__td" data-label="Общая стоимость">
+                <div class="table__cell table__total">
+                  <p>₽ 2.000</p>
+                </div>
+              </td>
+            </tr>
 
+            <tr class="table__tr">
+                <td class="table__td table-form__td">
+                  <div class="table-form__cell">
+                    <input class="table__input" placeholder="Название продукта">
+                  </div>
+                  
+                </td>
+                <td class="table__td table-form__td">
+                  <div class="table-form__cell">
+                    <input class="table__input" placeholder="Цена">
+                  </div>
+                </td>
+                <td class="table__td table-form__td">
+                  <div class="table-form__cell">
+                    <input class="table__input" placeholder="Количество">
+                  </div>
+                </td>
+                <td class="table__td table-form__td">
+                  <div class="table-form__cell">
+                    <button type="submit" class="table__submit">Добавить</button>
+                  </div>
+                </td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td table__sum"></td>
+              <td class="table__td table__sum"></td>
+              <td class="table__td table__sum">Итого</td>
+              <td class="table__td table__sum">₽ 2.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </main>
     <footer class="footer">
       <div class="load-time">
         <span class="load-time__text">Время загрузки страницы:
