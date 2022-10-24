@@ -1,0 +1,142 @@
+.table {
+  width: 100%;
+  margin-top: 40px;
+  border-spacing: 0px;
+  empty-cells: hide;
+}
+
+.table__th, .table__td {
+  padding: 20px;
+}
+
+.table__th {
+  border: 1px solid var(--black);
+}
+
+.table__th, .table__sum:nth-child(3) {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.table__th:not(:last-child), .table__td:not(:last-child) {
+  border-right: 0;
+}
+
+.table__td {
+  text-align: center;
+  border: 1px solid var(--black);
+  border-top: 0;
+  vertical-align: top;
+}
+
+.table__product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table__product__name {
+  text-align: left;
+  word-break: break-all;
+  max-width: 260px;
+}
+
+.table__price,
+.table__amount,
+.table__total {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.table__product__image {
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--black);
+}
+
+.table-form__cell {
+  display: flex;
+}
+
+.table__input {
+  flex: 1;
+  height: 40px;
+  background: none;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
+
+.table__input::placeholder {
+  color: var(--grey300)
+}
+
+.table__submit {
+  flex: 1;
+  height: 40px;
+  border: 1px solid var(--black);
+  background: var(--grey100);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.table__submit:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .table__th:not(:last-child), .table__td:not(:last-child) {
+    border-bottom: 0;
+    border-right: 1px solid var(--black);
+  }
+
+  .table__thead {
+    display: none;
+  }
+
+  .table__product {
+    flex-direction: column;
+  }
+
+  .table__product__image {
+    margin-right: 0px;
+  }
+
+  .table__cell {
+    align-items: flex-end;
+    justify-content: end;
+  }
+
+  .table__tr {
+    display: block;
+  }
+
+  .table__tr + .table__tr {
+    margin-top: 20px;
+  }
+
+  .table__product__name {
+    text-align: right;
+    margin: 20px 0px 0px 00px;
+  }
+  
+  .table__td {
+    border: 1px solid var(--black);
+    display: block;
+    text-align: right;
+  }
+
+  .table__td:empty {
+    display: none;
+  }
+
+  .table__td::before {
+    content: attr(data-label);
+    float: left;
+    font-style: italic;
+    font-weight: 600;
+  }
+}
