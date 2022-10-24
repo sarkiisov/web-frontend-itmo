@@ -15,7 +15,7 @@
 }
 
 .nav__link:hover {
-  color: var(--grey);
+  color: var(--grey500);
 }
 
 .nav__link:not(:last-child) {
@@ -37,7 +37,7 @@
 }
 
 .links__item:hover {
-  color: var(--grey);
+  color: var(--grey500);
 }
 
 @media screen and (max-width: 600px) {
