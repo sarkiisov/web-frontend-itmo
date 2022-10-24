@@ -1,8 +1,14 @@
 .table {
+  position: relative;
   width: 100%;
   margin-top: 40px;
   border-spacing: 0px;
   empty-cells: hide;
+}
+
+.table__thead {
+  position: sticky;
+  top: 0;
 }
 
 .table__th, .table__td {
@@ -11,6 +17,7 @@
 
 .table__th {
   border: 1px solid var(--black);
+  background: var(--white);
 }
 
 .table__th, .table__sum:nth-child(3) {
