@@ -1,1 +1,2 @@
 import './pageLoad';
+import './navLocation';
