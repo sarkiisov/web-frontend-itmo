@@ -2,6 +2,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./table.css);
+@import url(./toastify.css);
 
 :root {
   --black: #000000;
@@ -30,6 +31,10 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  padding-bottom: 40px;
 }
 
 .svg-group {
