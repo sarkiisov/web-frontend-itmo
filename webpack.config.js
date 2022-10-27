@@ -3,8 +3,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    bundle: './src/index.ts',
-    invoice: './src/invoice.ts'
+    bundle: './src/entries/index.ts',
+    invoice: './src/entries/invoice.ts'
   },
   mode: 'production',
   module: {
