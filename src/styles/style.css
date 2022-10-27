@@ -103,3 +103,57 @@ body {
   padding: 10px 0px;
   display: block;
 }
+
+.about__section + .about__section {
+  margin-top: 40px;
+}
+
+.about__section__content {
+  margin-top: 20px;
+}
+
+.about__section__title {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.list-item {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  list-style-position: inside;
+}
+
+.list-item::marker {
+  font-family: 'IBMPlexMono';
+  font-weight: 500;
+}
+
+.list-item__text-content {
+  font-family: 'Manrope';
+  font-weight: 500;
+}
+
+.code {
+  margin: 5px;
+  padding: 10px;
+  width: fit-content;
+  display: block;
+  background: var(--grey100);
+}
+
+.code + .code {
+  margin-top: 10px;
+}
+
+.external-link {
+  font-family: 'Manrope';
+  font-weight: 600;
+  text-decoration: underline;
+  font-style: normal;
+  color: var(--grey500);
+  transition: color var(--transition-duration);
+}
+
+.external-link:hover {
+  color: var(--grey300);
+}
