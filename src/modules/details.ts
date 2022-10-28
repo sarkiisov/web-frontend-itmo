@@ -67,6 +67,10 @@ const generateRandomId = (excludeNumbers: number[]): number => {
   return random;
 };
 
+const saveDetails = (details: Details): void => {
+  localStorage.setItem('details', JSON.stringify(details));
+};
+
 const generateDetails = (): Details => {
   const senderId = generateRandomId([]);
   const recipientId = generateRandomId([senderId]);
@@ -82,11 +86,8 @@ const restoreDetails = (): Details => {
     return JSON.parse(invoiceDetails);
   }
   const newUserDetails = generateDetails();
+  saveDetails(newUserDetails);
   return newUserDetails;
-};
-
-const saveDetails = (details: Details): void => {
-  localStorage.setItem('details', JSON.stringify(details));
 };
 
 export default (async function () {
