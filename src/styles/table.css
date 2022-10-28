@@ -130,7 +130,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .table__th:not(:last-child), .table__td:not(:last-child) {
     border-bottom: 0;
     border-right: 1px solid var(--black);
